@@ -1,15 +1,1 @@
-{
-    "version": 2,
-    "builds": [
-      {
-        "src": "./Vercel/app.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/Vercel/(.*)",
-        "dest": "/Vercel"
-      }
-    ]
-  }
+{ "rewrites": [ { "source": "/(.*)", "destination": "/" } ], "version": 2, "builds": [ {"src": "./app.py", "use": "@vercel/python", "config":{"runtime":"python3.10"}} ] }
