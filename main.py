@@ -2,19 +2,17 @@ from flask import Flask, render_template, request, jsonify
 import pickle
 import pandas as pd
 import numpy as np
-import os
+
 
 app = Flask(__name__)
 
-current_dir = os.getcwd()  # Gets the current working directory
-model_path = os.path.join(current_dir, 'models', 'model.pkl')
-dataframe_path = os.path.join(current_dir, 'models', 'df.pkl')
+
 
 # Load the model and dataset
 try:
-    with open(model_path, 'rb') as file:
+    with open('model.pkl', 'rb') as file:
         pipe = pickle.load(file)
-    with open(dataframe_path, 'rb') as f:
+    with open('df.pkl', 'rb') as f:
         df = pickle.load(f)
     print("Model and dataset loaded successfully")
 except Exception as e:
