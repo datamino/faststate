@@ -1,3 +1,5 @@
 venv
 vercel
 static
+_pycache_
+port.py

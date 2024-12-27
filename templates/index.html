@@ -47,7 +47,7 @@
         .logo {
             font-size: 2rem;
             font-weight: 700;
-            color:  #357ABD;
+            color:  #0D9488;
            
             letter-spacing: 2px;
         }
@@ -75,7 +75,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: #357ABD;
+            background: #0D9488;
             transition: width 0.3s ease;
             
         }
@@ -85,7 +85,7 @@
             
         }
         .nav-links a:hover {
-            color: #357ABD;
+            color: #0D9488;
         }
 
         .hero {
@@ -95,7 +95,7 @@
             justify-content: center;
             text-align: center;
             padding: 0 2rem;
-            background: linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.3)),
+            background: linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.5)),
                         url('https://ucarecdn.com/04d7806f-d933-422b-8b48-891ce3327811/bg.jpg') center/cover no-repeat;
             position: relative;
         }
@@ -135,9 +135,9 @@
         }
 
         .btn-primary {
-            background: #357ABD;
+            background: #0D9488;
             color: white;
-            border: 2px solid #357ABD;
+            border: 2px solid #0D9488;
         }
 
         .btn-outline {
@@ -195,7 +195,7 @@
         .input-group i {
             position: absolute;
             left: 15px;
-            color: #357ABD;
+            color: #0D9488;
             font-size: 1.2rem;
         }
 
@@ -211,7 +211,7 @@
         }
 
         .form-control:focus {
-            border-color:#357ABD;
+            border-color:#0D9488;
             box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.1);
             outline: none;
         }
@@ -219,7 +219,7 @@
         .btn-predict {
             width: 100%;
             padding: 1.2rem;
-            background: #357ABD;
+            background: #0D9488;
             border: none;
             border-radius: 10px;
             color: white;
@@ -305,7 +305,7 @@
         }
 
         .price-item p {
-            color:  #357ABD;
+            color:  #0D9488;
             font-size: 1.4rem;
             font-weight: 700;
         }
@@ -348,7 +348,7 @@
         }
 
         .footer {
-            background:rgb(31, 46, 61);
+            background: #111827;
             color: var(--light);
             padding: 4rem 2rem 0;
             margin-top: 4rem;
@@ -394,7 +394,7 @@
         }
         
         .social-links a:hover {
-            color: #357ABD;
+            color: #0D9488;
         }
         
         .footer-section h3 {
@@ -411,7 +411,7 @@
             bottom: -0.5rem;
             width: 50px;
             height: 2px;
-            background: #357ABD;
+            background: #0D9488;
         }
         
         .footer-section ul {
@@ -429,7 +429,7 @@
         }
         
         .footer-section ul li a:hover {
-            color: #357ABD;
+            color: #0D9488;
         }
         
         .contact-info li {
@@ -440,7 +440,7 @@
         }
         
         .contact-info li i {
-            color: #357ABD;
+            color: #0D9488;
         }
         
         .footer-bottom {
@@ -469,7 +469,7 @@
         }
         
         .footer-bottom-links a:hover {
-            color: #357ABD;
+            color: #0D9488;
         }
         
         @media (max-width: 768px) {
@@ -494,19 +494,19 @@
     </style>
 </head>
 <body>
-   
+   <div id="top"></div>
     <nav class="navbar">
         
         <div class="nav-content">
-          
+          <a href="#top" style="text-decoration: none;">
             <div class="logo">
                 <i class="fas fa-home"></i>
-                FastState</div>
+                FastState</div></a>
             <div class="nav-links">
-                <a  href="#home"><i class="fas fa-home"></i> Home</a>
+                <a  href="#top"><i class="fas fa-home"></i> Home</a>
                 <a  href="#predict"> <i class="fas fa-calculator"></i> Predict</a>
-                <a  href="#about"><i class="fas fa-info-circle"></i> About</a>
-                <a  href="#contact"> <i class="fas fa-envelope"></i> Contact</a>
+                <a  href="#foot"><i class="fas fa-info-circle"></i> About</a>
+                <a  href="#foot"> <i class="fas fa-envelope"></i> Contact</a>
             </div>
         </div>
     </nav>
@@ -517,7 +517,7 @@
             <p>Use our advanced AI algorithm to get accurate property valuations in seconds</p>
             <div class="hero-buttons">
                 <a href="#predict" class="btn btn-primary">Get Started</a>
-                <a href="#learn" class="btn btn-outline">Learn More</a>
+                <a href="#foot" class="btn btn-outline">Learn More</a>
             </div>
         </div>
     </section>
@@ -670,7 +670,7 @@
         </div>
     </div>
 </div>
-<footer class="footer">
+<footer class="footer" id="foot">
     <div class="footer-content">
         <div class="footer-section">
             <div class="footer-logo">
