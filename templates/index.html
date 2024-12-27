@@ -96,7 +96,7 @@
             text-align: center;
             padding: 0 2rem;
             background: linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.3)),
-                        url('bg.jpg') center/cover no-repeat;
+                        url('https://ucarecdn.com/04d7806f-d933-422b-8b48-891ce3327811/bg.jpg') center/cover no-repeat;
             position: relative;
         }
 
@@ -346,6 +346,149 @@
                 gap: 1.5rem;
             }
         }
+
+        .footer {
+            background:rgb(31, 46, 61);
+            color: var(--light);
+            padding: 4rem 2rem 0;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            padding-bottom: 3rem;
+        }
+        
+        .footer-section {
+            padding: 0 1rem;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-description {
+            color: #a0aec0;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            color: var(--light);
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #357ABD;
+        }
+        
+        .footer-section h3 {
+            color: var(--light);
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -0.5rem;
+            width: 50px;
+            height: 2px;
+            background: #357ABD;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-section ul li a {
+            color: #a0aec0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section ul li a:hover {
+            color: #357ABD;
+        }
+        
+        .contact-info li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #a0aec0;
+        }
+        
+        .contact-info li i {
+            color: #357ABD;
+        }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-bottom p {
+            color: #a0aec0;
+        }
+        
+        .footer-bottom-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .footer-bottom-links a {
+            color: #a0aec0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-bottom-links a:hover {
+            color: #357ABD;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        
+            .footer-bottom-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+        
        
 
     </style>
@@ -527,6 +670,65 @@
         </div>
     </div>
 </div>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <div class="footer-logo">
+                <i class="fas fa-home"></i>
+                <span>FastState</span>
+            </div>
+            <p class="footer-description">
+                FastState is your trusted AI-powered real estate valuation platform, providing accurate property predictions using advanced machine learning algorithms.
+            </p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#predict">Price Predictor</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Property Valuation</a></li>
+                <li><a href="#">Market Analysis</a></li>
+                <li><a href="#">Investment Advisory</a></li>
+                <li><a href="#">Real Estate Consulting</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> Fast Nuces ,Peshawer</li>
+                <li><i class="fas fa-phone"></i> +(92) 370-5778082</li>
+                <li><i class="fas fa-envelope"></i> datamino@outlook.com</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 FastState. All rights reserved.</p>
+        <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+        </div>
+    </div>
+</footer>
+
 
 
 <script>
